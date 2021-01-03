@@ -216,11 +216,3 @@ for i in range(6):
     plt.imshow(out[image_id, i, :, :].detach().numpy(), cmap="binary")
 plt.show()
 
-"""## Exercises
-
-* Modify LeNet to work with ReLU instead of Tanh -> What is the impact on training time, final loss
-* We have observed over-fitting -> Use weight_decay in torch.optim to add L2 regularisation
-* Instead of CIFAR10, use the MNIST data available from `torchvision.datasets.MNIST`. Download and visualise MNIST data.
-* But importantly MNIST images have only 1 channel instead of 3 channels in the case of CIFAR10. Modify LeNet to work with MNIST. Train and find optimised test accuracy.
-"""
-
